@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 135vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(m.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.h2{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+}
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    transition: 0.5em;
+    cursor: pointer;
+}
+.navbar ul li:hover::after{
+    width: 0;
+}
+
+.sp{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    color:#fff;
+}
+.sp p{
+    color: rgb(210, 22, 224);
+    margin-top: 150px;
+    margin-left: 190px;
+}
+.sp h3{
+    font-size: 70px;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border: bottom 20px;;
+    font-weight: bold;
+    border: 2px solid  #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+span{
+    background: rgb(210, 22, 224);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width:100%;
+}
+button:hover{
+    border:none;
+}
+.im{
+    background-image: url(h.png);
+    width: 457px;
+    height: 458px;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    margin-left: 914px;
+    margin-top: 80px;
+    margin-bottom: 1597px;
+}
